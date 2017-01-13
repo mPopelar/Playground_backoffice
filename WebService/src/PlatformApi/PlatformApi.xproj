@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>db60b8c2-245f-487d-b2d4-a8db8dbf7dde</ProjectGuid>
+    <ProjectGuid>66030e7d-1139-49e4-a192-bf9121f4e342</ProjectGuid>
     <RootNamespace>PlatformApi</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
