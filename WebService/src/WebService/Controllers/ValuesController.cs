@@ -1,19 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using PlatformApi.QueryHandlers;
+using PlatformApi.Queries;
+using System.Linq;
 
 namespace WebService.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly IGetClientsQueryHandler _clientsQueryHandler;
+
+        public ValuesController(IGetClientsQueryHandler clientsQueryHandler)
+        {
+            _clientsQueryHandler = clientsQueryHandler;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            var clients = _clientsQueryHandler.Execute(new GetClientsQuery());
+
+            return clients.Select(x => x.Name).ToList();
         }
 
         // GET api/values/5
