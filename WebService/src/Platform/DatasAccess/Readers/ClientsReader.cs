@@ -17,5 +17,10 @@ namespace Platform.DatasAccess.Readers
         {
             return _context.Clients.ToList();
         }
+
+        public Client GetClientById()
+        {
+            return _context.Clients.FirstOrDefault();
+        }
     }
 }
