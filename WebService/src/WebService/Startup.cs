@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Bootstraper;
+using System.IO;
 
 namespace WebService
 {
@@ -32,6 +33,7 @@ namespace WebService
 
             var installer = new AppInstaller();
             installer.Install(services);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

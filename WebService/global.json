@@ -1,6 +1,9 @@
 ﻿{
-  "projects": [ "src", "test" ],
-  "sdk": {
-    "version": "1.0.0-preview2-003131"
-  }
+    "ConnectionStrings": {
+        "DefaultConnection": "Data Source=MARTINNB\\SQLEXPRESS;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Initial Catalog=Playground"
+    },
+    "projects": [ "src", "test" ],
+    "sdk": {
+        "version": "1.0.0-preview2-003131"
+    }
 }

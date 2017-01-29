@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PlatformApi.QueryHandlers;
 using PlatformApi.Queries;
 using System.Linq;
+using System.Diagnostics;
 
 namespace WebService.Controllers
 {
@@ -36,12 +37,14 @@ namespace WebService.Controllers
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            Debug.WriteLine($"Debug message...this is value: {value}");
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
+            Debug.WriteLine($"Debug message...this is id: {id} and this is value: {value}");
         }
 
         // DELETE api/values/5
