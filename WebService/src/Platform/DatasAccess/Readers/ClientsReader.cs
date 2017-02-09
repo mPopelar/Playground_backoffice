@@ -27,5 +27,10 @@ namespace Platform.DatasAccess.Readers
         {
             return null;
         }
+
+        public Client GetCLientByName_V2(string name)
+        {
+            return null;
+        }
     }
 }
