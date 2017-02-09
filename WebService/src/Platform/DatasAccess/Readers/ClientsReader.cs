@@ -22,5 +22,10 @@ namespace Platform.DatasAccess.Readers
         {
             return _context.Clients.FirstOrDefault();
         }
+
+        public Client GetCLientByName(string name)
+        {
+            return new Client();
+        }
     }
 }
