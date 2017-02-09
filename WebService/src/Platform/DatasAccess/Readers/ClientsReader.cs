@@ -25,7 +25,7 @@ namespace Platform.DatasAccess.Readers
 
         public Client GetCLientByName(string name)
         {
-            return new Client();
+            return null;
         }
     }
 }
